@@ -13,6 +13,8 @@ Requires:         R-stats R-utils
 Requires:         R-mix 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-utils
 BuildRequires:    R-mix 
+BuildRequires:    blas-devel
+BuildRequires:    lapack-devel
 
 %description
 Model-based clustering and normal mixture modeling including Bayesian
