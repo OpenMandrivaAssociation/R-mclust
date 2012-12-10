@@ -9,9 +9,10 @@ Group:            Sciences/Mathematics
 License:          file LICENSE
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-stats R-utils R-mix
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex
-BuildRequires:    R-stats R-utils R-mix
+Requires:         R-stats R-utils 
+Requires:         R-mix 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-utils
+BuildRequires:    R-mix 
 BuildRequires:    blas-devel
 BuildRequires:    lapack-devel
 
@@ -46,3 +47,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Fri Feb 17 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.4.11-1
++ Revision: 775949
+- Import R-mclust
+- Import R-mclust
+
