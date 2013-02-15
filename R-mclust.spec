@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          3.4.11
+Version:          4.0
 Release:          1
 Summary:          Model-Based Clustering / Normal Mixture Modeling
 Group:            Sciences/Mathematics
 License:          file LICENSE
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/mclust_4.0.tar.gz
 Requires:         R-stats R-utils 
 Requires:         R-mix 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-utils
@@ -35,18 +35,19 @@ rm -f %{buildroot}%{rlibdir}/R.css
 
 %files
 %dir %{rlibdir}/%{packname}
-%doc %{rlibdir}/%{packname}/cite
+#%doc %{rlibdir}/%{packname}/cite
 %doc %{rlibdir}/%{packname}/html
 %doc %{rlibdir}/%{packname}/CITATION
 %doc %{rlibdir}/%{packname}/DESCRIPTION
 %{rlibdir}/%{packname}/INDEX
-%{rlibdir}/%{packname}/LICENSE
+#%{rlibdir}/%{packname}/LICENSE
 %{rlibdir}/%{packname}/NAMESPACE
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+%{rlibdir}/%{packname}/doc
 
 
 %changelog
@@ -54,4 +55,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 775949
 - Import R-mclust
 - Import R-mclust
+
 
