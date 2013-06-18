@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          4.0
-Release:          1
+Release:          2
 Summary:          Model-Based Clustering / Normal Mixture Modeling
 Group:            Sciences/Mathematics
 License:          file LICENSE
