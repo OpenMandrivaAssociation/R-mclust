@@ -48,7 +48,7 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/doc
-/usr/lib/R/library/mclust/NEWS
+%{rlibdir}/%{packname}/NEWS
 
 
 %changelog
