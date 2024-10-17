@@ -7,7 +7,7 @@ Release:          1
 Summary:          Model-Based Clustering / Normal Mixture Modeling
 Group:            Sciences/Mathematics
 License:          file LICENSE
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/mclust_4.2.tar.gz
 Requires:         R-stats R-utils 
 Requires:         R-mix 
